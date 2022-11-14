@@ -1,0 +1,219 @@
+@import './normalize';
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/*  GLOBAL START*/
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*  GLOBAL END*/
+
+
+/* MODAL START*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.backdrop.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* MODAL END*/
+/* HEADER START*/
+.header {
+    position: relative;
+    background-color: #fff;
+    transition: top 0.2s;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    z-index: 5;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 104px;
+        right: -100%;
+        width: 383px;
+        height: calc(100vh - 104px);
+        display: block;
+        background-color: #fff;
+        padding: 30px 0 30px 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: -1;
+    }
+
+    &__menu.open {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    
+}
+
+.list {
+    &__navbar {
+        display: flex;
+    }
+
+    &__menu {
+        position: absolute;
+        background-color: red;
+        width: 100%;
+        min-height: 400px;
+        left: 0;
+        top: 104px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    &__menu.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__btn {
+        position: relative;
+        padding: 40px 20px;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s;
+    }
+
+    &__btn:hover {
+        color: #e89f38;
+    }
+
+    &__btn::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #e89f38;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    &__btn:hover::before {
+        opacity: 1;
+    }
+
+    &__btn.active::before {
+        opacity: 1;
+    }
+}
+
+.block__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.d-none {
+    display: none;
+}
+
+/* HEADER END*/
+/* SECTION START*/
+.section{
+    width: 100%;
+    height: auto;
+    &__medium {
+        background-image: url('https://vasylisa.ru/themes/vasilisa/img/constructor/living_14032022.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 765px;
+    }
+}
+/* SECTION END*/
+
+/* MAIN START */
+
+.news {
+    margin-top: 80px;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    width: 31%;
+    height: 435px;
+    position: relative;
+    background-color: red;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__list {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        gap: 4px;
+
+        &-item {
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid #fff;
+
+            &__list-item:hover {
+                border-color: #e89f38;
+            }
+        }
+    }
+}
+
+/* MAIN END */

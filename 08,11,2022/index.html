@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ssets/SCSS.scss/style.css">
+    <title>Vasylisa clone</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- HEADER - START -->
+
+        <haeder class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <img src="./images/logo.svg" alt="logo">
+                    </div>
+
+                    <div class="header__navbar">
+                        <ul class="header__navbar-list list__navbar">
+                            <li class="list__item">
+                                <button class="list__btn">СПАЛЬНЯ</button>
+                                <div class="list__menu">
+                                    <div class="container">
+                                        <h1 class="list__menu-text">СПАЛЬНЯ</h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <button class="list__btn">КУХНЯ</button>
+                                <div class="list__menu">
+                                    <div class="container">
+                                        <h1 class="list__menu-text">КУХНЯ</h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <button class="list__btn">ВАННАЯ</button>
+                                <div class="list__menu">
+                                    <div class="container">
+                                        <h1 class="list__menu-text">ВАННАЯ</h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <button class="list__btn">ГОСТИНАЯ</button>
+                                <div class="list__menu">
+                                    <div class="container">
+                                        <h1 class="list__menu-text">ГОСТИНАЯ</h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <button class="list__btn">ДЕТСКАЯ</button>
+                                <div class="list__menu">
+                                    <div class="container">
+                                        <h1 class="list__menu-text">ДЕТСКАЯ</h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <button class="list__btn">АКСЕССУАРЫ</button>
+                                <div class="list__menu">
+                                    <div class="container">
+                                        <h1 class="list__menu-text">АКСЕССУАРЫ</h1>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__btns">
+                        <button class="header__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(43, 43, 43, 1);">
+                                <path
+                                    d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="header__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(43, 43, 43, 1);">
+                                <path
+                                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="header__btn burger__btn">
+                            <svg class="burger__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" style="fill: rgba(43, 43, 43, 1)">
+                                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                            </svg>
+
+                            <svg class="close__icon d-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" style="fill: rgba(43, 43, 43, 1)">
+                                <path d=" m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414
+                                1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header__menu">
+                <div class="header__menu-block block__menu">
+                    <a href="#" class="block__menu-link">Каталог</a>
+                    <a href="#" class="block__menu-link">Новости</a>
+                    <a href="#" class="block__menu-link">О бренде</a>
+                    <a href="#" class="block__menu-link">О компании</a>
+                    <a href="#" class="block__menu-link">Партнёрам</a>
+                    <a href="#" class="block__menu-link">Отзывы</a>
+                    <a href="#" class="block__menu-link">FAQ</a>
+                    <a href="#" class="block__menu-link">Контакты</a>
+                </div>
+            </div>
+        </haeder>
+
+        <!-- HEADER - END -->
+
+        <!-- SECTION START -->
+        <section class="section">
+            <div class="container">
+                <div class="section__medium">
+                
+                </div>
+            </div>
+        </section>
+        <!-- SECTION END -->
+
+        <!-- MAIN - START -->
+
+        <main class="main"> 
+            <section class="news">
+                <div class="container">
+                    <div class="news__row">
+                        <div class="card">
+                            <div class="card__bg">
+                                <img class="card__bg-image"
+                                    src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/yH/1Q/bq/fe/bpb2m766_1663656683.jpeg"
+                                    alt="picture">
+                            </div>
+
+                            <ul class="card__list">
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/yH/1Q/bq/fe/bpb2m766_1663656683.jpeg">
+                                </li>
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/gn/ZD/na/su/WtlApZW3_1663656691.jpeg">
+                                </li>
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/YZ/ix/V7/m9/yy48MBb6_1663656695.jpeg">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__bg">
+                                <img class="card__bg-image"
+                                    src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/74/4i/u6/QQ/mDyOwrYS_1663656352.jpeg"
+                                    alt="picture">
+                            </div>
+
+                            <ul class="card__list">
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru//assets/thumbnail/435x435/uploads/74/4i/u6/QQ/mDyOwrYS_1663656352.jpeg">
+                                </li>
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru//assets/thumbnail/435x435/uploads/5I/LP/wi/h0/plm4bHsi_1663656356.jpeg">
+                                </li>
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru//assets/thumbnail/435x435/uploads/8D/T-/aM/Aj/wVogoCR9_1663656360.jpeg">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__bg">
+                                <img class="card__bg-image"
+                                    src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/5c/zK/SO/5R/1TLuXpmj_1663656138.jpeg"
+                                    alt="picture">
+                            </div>
+
+                            <ul class="card__list">
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/5c/zK/SO/5R/1TLuXpmj_1663656138.jpeg">
+                                </li>
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/Ke/1p/T2/cp/Ry3TmemK_1663656144.jpeg">
+                                </li>
+                                <li class="card__list-item"
+                                    data-src="https://vasylisa.ru/assets/thumbnail/435x435/uploads/R_/wR/XG/Ok/zqj7_4fh_1663656147.jpeg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- MAIN - END -->
+
+
+        <div class="backdrop"></div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
