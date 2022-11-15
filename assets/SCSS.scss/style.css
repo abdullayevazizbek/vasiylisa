@@ -210,4 +210,90 @@ button {
   border-color: #e89f38;
 }
 
-/* MAIN END *//*# sourceMappingURL=style.css.map */
+/* MAIN END */
+/* MAIN__TWO START */
+.main__two {
+  padding-top: 50px;
+}
+.main__two_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.main__two_nav-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.main__two_cards {
+  display: flex;
+  align-items: center;
+}
+.main__two_card {
+  margin-right: 20px;
+}
+
+/* MAIN__TWO END */
+/* MAIN__CATALOG START*/
+.main__catalog {
+  padding: 50px 0 0 0;
+}
+.main__catalog_subtitle {
+  text-align: end;
+}
+.main__catalog-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__catalog-cards_one {
+  width: 439.98px;
+  height: 460px;
+  background-image: url("https://vasylisa.ru/themes/vasilisa/img/category/kyxny.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 65px;
+}
+.main__catalog-cards_one a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  margin-bottom: 3px;
+  color: #000;
+}
+.main__catalog-cards_one a:hover {
+  text-decoration: underline;
+}
+.main__catalog-cards_one a h4 {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.main__catalog-cards_one a h4:hover {
+  text-decoration: none;
+}
+.main__catalog-cards_two {
+  margin: 0 10px 10px 20px;
+  background-image: url("https://vasylisa.ru/themes/vasilisa/img/category/spaliny.jpg");
+}
+.main__catalog-cards_three {
+  margin-left: 10px;
+  background-image: url("https://vasylisa.ru/themes/vasilisa/img/category/gostinaya.jpg");
+}
+.main__catalog-cards_four {
+  margin: 10px 0 0 0;
+  background-image: url("https://vasylisa.ru/themes/vasilisa/img/category/vannay.jpg");
+}
+.main__catalog-cards_five {
+  margin: 10px 10px 0 20px;
+  background-image: url("https://vasylisa.ru/themes/vasilisa/img/category/detskaya.jpg");
+}
+.main__catalog-cards_sixe {
+  margin: 10px 0 0 10px;
+  background-image: url("https://vasylisa.ru/themes/vasilisa/img/category/aksessuari.jpg");
+}
+
+/* MAIN__CATALOG END*//*# sourceMappingURL=style.css.map */

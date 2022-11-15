@@ -76,7 +76,7 @@
         visibility: visible;
     }
 
-    
+
 }
 
 .list {
@@ -148,9 +148,10 @@
 
 /* HEADER END*/
 /* SECTION START*/
-.section{
+.section {
     width: 100%;
     height: auto;
+
     &__medium {
         background-image: url('https://vasylisa.ru/themes/vasilisa/img/constructor/living_14032022.jpg');
         background-size: cover;
@@ -159,6 +160,7 @@
         height: 765px;
     }
 }
+
 /* SECTION END*/
 
 /* MAIN START */
@@ -217,3 +219,102 @@
 }
 
 /* MAIN END */
+
+/* MAIN__TWO START */
+
+.main__two {
+    padding-top: 50px;
+
+    &_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &-h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 38px;
+            line-height: 32px;
+            font-weight: 400;
+        }
+    }
+
+    &_cards {
+        display: flex;
+        align-items: center;
+    }
+
+    &_card {
+        margin-right: 20px;
+    }
+}
+
+/* MAIN__TWO END */
+
+/* MAIN__CATALOG START*/
+
+.main__catalog {
+    padding: 50px 0 0 0;
+    &_subtitle{
+        text-align: end;
+    }
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        &_one {
+            width: 439.98px;
+            height: 460px;
+            background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/kyxny.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 60px 65px;
+            & a {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                line-height: 26px;
+                display: block;
+                margin-bottom: 3px;
+                color: #000;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                & h4 {
+                    font-size: 24px;
+                    line-height: 26px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+        &_two{
+            margin: 0 10px 10px 20px;
+            background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/spaliny.jpg');
+        }
+        &_three{
+            margin-left: 10px;
+            background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/gostinaya.jpg');
+        }
+        &_four{
+            margin: 10px 0 0 0;
+            background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/vannay.jpg');
+        }
+        &_five{
+            margin: 10px 10px 0 20px;
+            background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/detskaya.jpg');
+        }
+        &_sixe{
+            margin: 10px 0 0 10px;
+            background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/aksessuari.jpg');
+        }
+    }
+}
+
+/* MAIN__CATALOG END*/

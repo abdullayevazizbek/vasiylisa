@@ -1,4 +1,4 @@
-        // Navbar open close
+// Navbar open close
 
 const listBtnArr = document.querySelectorAll('.list__btn')
 const listMenuArr = document.querySelectorAll('.list__menu')
@@ -95,3 +95,21 @@ for (let j = 0; j < card.length; j++) {
         cardBgImage.setAttribute('src', imageData)
     })
 }
+
+//  swiper js
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
