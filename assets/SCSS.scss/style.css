@@ -386,11 +386,15 @@ button {
   border-bottom: 1px solid gray;
   margin-bottom: 20px;
 }
+.cold__box-2 img {
+  width: 20%;
+}
 
 /*MAIN_THREE END*/
 /*FOOTER START*/
 .box__menu {
   display: flex;
+  justify-content: space-around;
   gap: 150px;
   padding-bottom: 80px;
   border-bottom: 1px solid grey;
@@ -404,6 +408,9 @@ button {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.box__menu-link img {
+  width: 145px;
 }
 .box__menu button {
   background-color: inherit;

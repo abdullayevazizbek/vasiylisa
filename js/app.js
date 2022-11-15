@@ -113,3 +113,19 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+const swiperTwo = new Swiper('.oneswiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+        delay:4500,
+        disableOnInteraction: false,
+      },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

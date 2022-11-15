@@ -439,6 +439,10 @@
             padding-bottom: 80px;
             border-bottom: 1px solid gray;
             margin-bottom: 20px;
+
+            & img {
+                width: 20%;
+            }
         }
     }
 }
@@ -447,9 +451,11 @@
 /*FOOTER START*/
 .box__menu {
     display: flex;
+    justify-content: space-around;
     gap: 150px;
     padding-bottom: 80px;
     border-bottom: 1px solid grey;
+
 
     &-a {
         font-family: 'Montserrat', sans-serif;
@@ -462,6 +468,9 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        & img{
+            width: 145px;
+        }
     }
 
     & button {
