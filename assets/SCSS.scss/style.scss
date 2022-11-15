@@ -51,8 +51,15 @@
 
     &__row {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        /* min-width: 15vh; */
+        width: 100%;
+        padding: 0 20px;
     }
 
     &__menu {
@@ -68,6 +75,45 @@
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: -1;
+
+        &-link {
+            color: grey;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+
+        &-block {
+            border-bottom: 1px solid grey;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__block {
+            &-name {
+                color: grey;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 25px;
+            }
+
+            &-btn {
+                border: 2px solid grey;
+                width: 320px;
+                height: 50px;
+                margin-top: 10px;
+                border-radius: 2px;
+                font-size: 17px;
+                color: black;
+                transition: all .3s ease;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                    border: none;
+                }
+            }
+
+        }
     }
 
     &__menu.open {
@@ -76,6 +122,10 @@
         visibility: visible;
     }
 
+    &__btn {
+        border: none;
+        background-color: inherit;
+    }
 
 }
 
@@ -140,6 +190,9 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 .d-none {
@@ -255,9 +308,11 @@
 
 .main__catalog {
     padding: 50px 0 0 0;
-    &_subtitle{
+
+    &_subtitle {
         text-align: end;
     }
+
     &-cards {
         display: flex;
         flex-wrap: wrap;
@@ -269,6 +324,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             padding: 60px 65px;
+
             & a {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 16px;
@@ -277,44 +333,172 @@
                 margin-bottom: 3px;
                 color: #000;
 
-                &:hover {
-                    text-decoration: underline;
-                }
-
-                & h4 {
-                    font-size: 24px;
-                    line-height: 26px;
-                    font-weight: 600;
-                    margin-bottom: 10px;
-
+                &:not(:first-child) {
                     &:hover {
-                        text-decoration: none;
+                        text-decoration: underline;
                     }
                 }
             }
 
+
+            & h4 {
+                font-size: 24px;
+                line-height: 26px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
-        &_two{
+
+        &_two {
             margin: 0 10px 10px 20px;
             background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/spaliny.jpg');
         }
-        &_three{
+
+        &_three {
             margin-left: 10px;
             background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/gostinaya.jpg');
         }
-        &_four{
+
+        &_four {
             margin: 10px 0 0 0;
             background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/vannay.jpg');
         }
-        &_five{
+
+        &_five {
             margin: 10px 10px 0 20px;
             background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/detskaya.jpg');
         }
-        &_sixe{
+
+        &_sixe {
             margin: 10px 0 0 10px;
             background-image: url('https://vasylisa.ru/themes/vasilisa/img/category/aksessuari.jpg');
+        }
+
+    }
+
+
+}
+
+
+/* MAIN__CATALOG END*/
+
+/*MAIN_THREE START*/
+.cold {
+    &__link {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 110px;
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        &-2 {
+            margin-top: 20px;
+            line-height: 30px;
+            width: 950px;
+        }
+
+        &-1 {
+            line-height: 30px;
+            width: 900px;
+        }
+    }
+
+    &__min-text {
+        color: gray;
+        padding: 30px 0;
+    }
+
+    &__box {
+        display: block;
+
+        &-1 {
+            width: 990px;
+            display: flex;
+            gap: 40px;
+
+            & img {
+                width: 20%;
+            }
+        }
+
+        &-2 {
+            margin-top: 40px;
+            padding-bottom: 80px;
+            border-bottom: 1px solid gray;
+            margin-bottom: 20px;
         }
     }
 }
 
-/* MAIN__CATALOG END*/
+/*MAIN_THREE END*/
+/*FOOTER START*/
+.box__menu {
+    display: flex;
+    gap: 150px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid grey;
+
+    &-a {
+        font-family: 'Montserrat', sans-serif;
+        color: gray;
+        font-size: 18px;
+
+    }
+
+    &-link {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    & button {
+        background-color: inherit;
+        border: none;
+    }
+}
+
+.num {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 500;
+}
+
+.footer {
+    &__menu {
+        display: flex;
+        padding: 30px 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 25px;
+        color: gray;
+    }
+}
+
+/*FOOTER END*/

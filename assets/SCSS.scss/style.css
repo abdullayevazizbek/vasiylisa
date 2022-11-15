@@ -67,8 +67,15 @@ button {
 }
 .header__row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  /* min-width: 15vh; */
+  width: 100%;
+  padding: 0 20px;
 }
 .header__menu {
   position: absolute;
@@ -84,10 +91,45 @@ button {
   transition: all 0.3s ease;
   z-index: -1;
 }
+.header__menu-link {
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.header__menu-block {
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.header__menu__block-name {
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+.header__menu__block-btn {
+  border: 2px solid grey;
+  width: 320px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  font-size: 17px;
+  color: black;
+  transition: all 0.3s ease;
+}
+.header__menu__block-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
 .header__menu.open {
   right: 0;
   opacity: 1;
   visibility: visible;
+}
+.header__btn {
+  border: none;
+  background-color: inherit;
 }
 
 .list__navbar {
@@ -142,6 +184,9 @@ button {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 .d-none {
@@ -263,16 +308,17 @@ button {
   margin-bottom: 3px;
   color: #000;
 }
-.main__catalog-cards_one a:hover {
+.main__catalog-cards_one a:not(:first-child):hover {
   text-decoration: underline;
 }
-.main__catalog-cards_one a h4 {
+.main__catalog-cards_one h4 {
   font-size: 24px;
   line-height: 26px;
   font-weight: 600;
   margin-bottom: 10px;
+  text-decoration: none;
 }
-.main__catalog-cards_one a h4:hover {
+.main__catalog-cards_one h4:hover {
   text-decoration: none;
 }
 .main__catalog-cards_two {
@@ -296,4 +342,98 @@ button {
   background-image: url("https://vasylisa.ru/themes/vasilisa/img/category/aksessuari.jpg");
 }
 
-/* MAIN__CATALOG END*//*# sourceMappingURL=style.css.map */
+/* MAIN__CATALOG END*/
+/*MAIN_THREE START*/
+.cold__link {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 110px;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.cold__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.cold__text-2 {
+  margin-top: 20px;
+  line-height: 30px;
+  width: 950px;
+}
+.cold__text-1 {
+  line-height: 30px;
+  width: 900px;
+}
+.cold__min-text {
+  color: gray;
+  padding: 30px 0;
+}
+.cold__box {
+  display: block;
+}
+.cold__box-1 {
+  width: 990px;
+  display: flex;
+  gap: 40px;
+}
+.cold__box-1 img {
+  width: 20%;
+}
+.cold__box-2 {
+  margin-top: 40px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+/*MAIN_THREE END*/
+/*FOOTER START*/
+.box__menu {
+  display: flex;
+  gap: 150px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid grey;
+}
+.box__menu-a {
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  font-size: 18px;
+}
+.box__menu-link {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.box__menu button {
+  background-color: inherit;
+  border: none;
+}
+
+.num {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-weight: 500;
+}
+
+.footer__menu {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+}
+.footer__name {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+.footer__link {
+  font-weight: 700;
+  font-size: 25px;
+  color: gray;
+}
+
+/*FOOTER END*//*# sourceMappingURL=style.css.map */
